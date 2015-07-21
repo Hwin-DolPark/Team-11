@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.androidbegin.parselogintutorial"
+        minSdkVersion 4
+        targetSdkVersion 15
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/bolts-android-1.2.0-javadoc.jar')
+    compile files('libs/bolts-android-1.2.0.jar')
+    compile files('libs/Parse-1.9.2.jar')
+    compile files('libs/ParseCrashReporting-1.9.2.jar')
+    compile files('libs/ParseFacebookUtilsV4-1.9.2.jar')
+}

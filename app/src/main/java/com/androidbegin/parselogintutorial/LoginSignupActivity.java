@@ -59,7 +59,7 @@ public class LoginSignupActivity extends Activity implements View.OnClickListene
 				if (parseUser != null) {
 					Intent intent = new Intent(LoginSignupActivity.this, Welcome.class);
 					startActivity(intent);
-					Toast.makeText(LoginSignupActivity.this, ParseUser.getCurrentUser().getUsername() + "으로 Login에 성공했습니다. - ", Toast.LENGTH_LONG).show();
+					Toast.makeText(LoginSignupActivity.this, ParseUser.getCurrentUser().getUsername() + "으로 Login에 성공했습니다.", Toast.LENGTH_LONG).show();
 					finish();
 				} else {
 					Toast.makeText(LoginSignupActivity.this, "일치하는 정보가 없습니다.", Toast.LENGTH_LONG).show();

@@ -42,7 +42,7 @@ public class ParseStarterProjectActivity extends Activity {
         			data2.put("email", "test5@test.com"); // 데이터 입력
         			data2.put("memo", "test5"); // 데이터 입력
         			data2.setACL(defaultACL); // object에 ACL set
-        			data2.save(); // parse.com에 해당 object save
+        			data2.save(); // parse.com에 해당 object save.
         			} catch (ParseException e) {
         				e.printStackTrace();
         			}
